@@ -1,6 +1,4 @@
 /*
-Theme Name:
-Author: yaminncco
 
 Colors:
 	Body 		  : #868F9B
@@ -99,6 +97,9 @@ a:focus {
   color: #6195ff;
 }
 
+#title {
+  color: #fff;
+}
 .main-color {
   color: #6195ff;
 }
@@ -339,7 +340,7 @@ textarea:focus {
   left: 0;
   right: 0;
   padding: 0px 0px;
-  background-color: #fff !important;
+  background-color: black !important;
   border-bottom: 1px solid #eee;
 }
 
@@ -359,7 +360,7 @@ textarea:focus {
     transition: 0.2s color;
   }
   .main-nav > li > a {
-    color: #10161a;
+    color: #fff;
     padding: 15px 0px;
   }
   #nav.nav-transparent:not(.fixed-nav) .main-nav > li > a {
@@ -456,7 +457,7 @@ textarea:focus {
     padding: 0px 0px;
   }
   #nav.nav-transparent {
-    background: #fff;
+    background: black;
   }
   .main-nav {
     position: fixed;
@@ -651,12 +652,22 @@ header {
 	About
 \*------------------------------------*/
 
+#logo-main {
+  max-height: 50vh;
+  max-width: 50vw;
+  margin: auto;
+}
+
+#about {
+  margin: auto;
+  float: none;
+}
+
 .about {
   position: relative;
   text-align: center;
   padding: 40px 20px;
   border: 1px solid #eee;
-  margin: 15px 0px;
 }
 
 .about i {
@@ -695,6 +706,9 @@ header {
 	Portfolio
 \*------------------------------------*/
 
+#billing {
+  margin: auto;
+}
 .work {
   position: relative;
   padding: 20px;
@@ -1550,6 +1564,10 @@ header {
 @media only screen and (max-width: 480px) {
   #portfolio [class*="col-xs"] {
     width: 100%;
+  }
+
+  #about {
+    margin: auto;
   }
 
   #numbers [class*="col-xs"] {
